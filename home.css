@@ -12,9 +12,23 @@
 }
 
 /* Cover slideshow fade */
+/* --- FIXED-SIZE COVER SLIDESHOW --- */
+.cover-v2{
+  position: relative;
+  height: clamp(360px, 45vh, 560px); /* FIXED visual height */
+  overflow: hidden;
+}
+
+/* Image always fills container, never changes layout */
 .cover-v2 img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop, don't stretch */
   transition: opacity 450ms ease;
 }
+
 .cover-v2 img.fade-out{
   opacity: 0;
 }
