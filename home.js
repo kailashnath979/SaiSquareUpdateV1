@@ -2,7 +2,7 @@
  * EDIT THESE TWO VALUES ONLY
  ************************************************************/
 const GENDER = "REPLACE_ME";      // set to "BOY" or "GIRL"
-const MEET_DATE = "20190623";     // <-- set their meet date in YYYYMMDD
+const MEET_DATE = "20140602";     // <-- set their meet date in YYYYMMDD
 
 /************************************************************
  * Cover slideshow (uses your 5 images)
@@ -11,11 +11,11 @@ const coverImg = document.getElementById("coverImg");
 const pauseBtn = document.getElementById("pauseSlideshow");
 
 const slideshowImages = [
-  "images/cover.jpg",
-  "images/1.jpg",
-  "images/2.jpg",
-  "images/3.jpg",
-  "images/4.jpg",
+  "images/cover.JPG",
+  "images/1.JPG",
+  "images/2.JPG",
+  "images/3.JPG",
+  "images/4.JPG",
 ];
 
 let slideIndex = 0;
