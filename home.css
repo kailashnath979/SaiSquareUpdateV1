@@ -152,3 +152,30 @@
   padding: 10px 0 2px;
   letter-spacing: 2px;
 }
+
+/* --- MODAL READABILITY FIX (v2) --- */
+
+/* Darken the backdrop more */
+.modal{
+  background: rgba(0,0,0,.78);   /* was ~.55 */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Make the modal card less transparent */
+.modal-card{
+  background: rgba(15, 20, 35, 0.96);  /* almost solid */
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+/* Make text pop a bit more */
+.modal-card .muted{
+  color: rgba(235, 240, 255, 0.78);
+}
+.reveal-stage{
+  font-size: 16px;
+}
+.big{
+  letter-spacing: .3px;
+}
+
