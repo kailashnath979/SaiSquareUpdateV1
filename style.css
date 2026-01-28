@@ -96,14 +96,6 @@ h2{
   .hero{ grid-template-columns: 1.35fr .65fr; }
 }
 
-/* Cover card */
-.hero .cover{
-  position:relative;
-  background: #111;
-  /* Taller on big displays, still fine on mobile */
-  min-height: clamp(320px, 45vh, 560px);
-}
-
 .cover img{
   width:100%;
   height:100%;
