@@ -179,4 +179,48 @@
 .big{
   letter-spacing: .3px;
 }
+/* -----------------------------
+   LAPTOP / MID-SIZE FIXES
+   Targets ~900px–1300px widths
+------------------------------*/
+
+/* 1) Hero: stack earlier on laptops to avoid awkward squeeze */
+@media (max-width: 1200px){
+  .hero{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 2) 2-column grid cards: stack earlier so cards don’t get cramped */
+@media (max-width: 1200px){
+  .grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 3) Poll buttons: stop forcing equal widths that can overflow */
+@media (max-width: 1200px){
+  .poll-actions{
+    flex-direction: column;
+  }
+  .btn-team{
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* 4) Slider meta row: if it wraps badly, switch to 2 columns */
+@media (max-width: 1200px){
+  .slider-meta{
+    grid-template-columns: auto 1fr;
+    row-gap: 8px;
+  }
+}
+
+/* 5) Make modal a bit wider-friendly and text not squished */
+@media (max-width: 1200px){
+  .modal-card{
+    width: min(820px, 96vw);
+  }
+}
 
