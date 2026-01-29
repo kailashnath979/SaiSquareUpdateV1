@@ -224,3 +224,15 @@
   }
 }
 
+/* Fix the “orphan card” on mid-size screens:
+   When grid is 2 columns, make the poll take the full row. */
+@media (min-width: 861px) and (max-width: 1399px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid .poll{
+    grid-column: 1 / -1; /* span both columns */
+  }
+}
+
+
